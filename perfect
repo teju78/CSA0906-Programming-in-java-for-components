@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.Scanner;
+class Sree
+{
+    public static void main(String args[])
+    {
+        int a,sum=0,div=1;
+        Scanner duo=new Scanner(System.in);
+        System.out.println(" a = " );
+        a=duo.nextInt();
+        while(div<a)
+        {
+            if(a%div==0)
+            {
+                sum=sum+div;
+            }
+            div++;
+        }
+            if(sum==a)
+            {
+                System.out.println(" perfect ");
+            }
+            else
+            {
+                System.out.println("nt");
+            }
+        
+    }
+}
